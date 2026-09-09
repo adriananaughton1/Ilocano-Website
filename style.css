@@ -1,0 +1,70 @@
+:root {
+  --primary-color: #2b6777;
+  --accent-color: #52ab98;
+  --background-color: #f2f2f2;
+  --card-background: #ffffff;
+  --text-color: #333333;
+}
+
+body {
+  font-family: system-ui, Arial, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: var(--primary-color);
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+#quiz-area {
+  background-color: var(--card-background);
+  max-width: 500px;
+  margin: 0 auto 20px auto;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#score-area {
+  max-width: 500px;
+  margin: 0 auto 20px auto;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+#restart-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 12px 24px;
+  font-size: 1em;
+  background-color: var(--accent-color);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#restart-btn:hover {
+  background-color: var(--primary-color);
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  #quiz-area {
+    padding: 20px 15px;
+  }
+}
