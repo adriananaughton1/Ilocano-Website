@@ -1,70 +1,102 @@
 :root {
-  --primary-color: #2b6777;
-  --accent-color: #52ab98;
-  --background-color: #f2f2f2;
-  --card-background: #ffffff;
-  --text-color: #333333;
+    --primary-color: #3f6f5f;
+    --accent-color: #d9a441;
+    --background-color: #f7f4ed;
+    --card-background: #ffffff;
+    --text-color: #333333;
 }
-
 body {
-  font-family: system-ui, Arial, sans-serif;
-  background-color: var(--background-color);
-  color: var(--text-color);
-  margin: 0;
-  padding: 20px;
+    font-family: system-ui, Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: white;
 }
 
-h1 {
-  text-align: center;
-  color: var(--primary-color);
-  font-size: 2em;
-  margin-bottom: 30px;
+.logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--primary-color);
 }
 
-#quiz-area {
-  background-color: var(--card-background);
-  max-width: 500px;
-  margin: 0 auto 20px auto;
-  padding: 30px 20px;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+.nav-links {
+    display: flex;
+    gap: 25px;
 }
 
-#score-area {
-  max-width: 500px;
-  margin: 0 auto 20px auto;
-  text-align: center;
-  font-size: 1.2em;
-  font-weight: bold;
-  color: var(--primary-color);
+.nav-links a {
+    color: var(--text-color);
+    text-decoration: none;
 }
 
-#restart-btn {
-  display: block;
-  margin: 0 auto;
-  padding: 12px 24px;
-  font-size: 1em;
-  background-color: var(--accent-color);
-  color: #ffffff;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+.hero {
+    padding: 80px 20px;
+    text-align: center;
 }
 
-#restart-btn:hover {
-  background-color: var(--primary-color);
+.hero h1 {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin: 0;
+}
+.practice {
+    padding: 40px 8% 80px;
+    text-align: center;
 }
 
-@media (max-width: 480px) {
-  body {
-    padding: 10px;
-  }
+.practice h2 {
+    margin-bottom: 35px;
+}
+.activity-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
 
-  h1 {
-    font-size: 1.5em;
-  }
+.activity-card {
+    width: 280px;
+    padding: 30px;
+    background-color: var(--card-background);
+    border-radius: 15px;
+    text-decoration: none;
+    color: var(--text-color);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s;
+}
 
-  #quiz-area {
-    padding: 20px 15px;
-  }
+.activity-card:hover {
+    transform: translateY(-5px);
+}
+
+.activity-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.activity-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.activity-card p {
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+.card-button {
+    display: inline-block;
+    padding: 10px 16px;
+    border-radius: 8px;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
 }
