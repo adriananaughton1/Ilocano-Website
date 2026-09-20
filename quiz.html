@@ -1,15 +1,61 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Ilocano Quiz</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <h1>Ilocano Quiz</h1>
-  <p>Category selection and the quiz are coming in the next steps.</p>
-  <a class="back-link" href="index.html">Back to Home</a>
+  <nav class="navbar">
+    <div class="logo">Learn Ilocano</div>
+
+
+<div class="nav-links">
+  <a href="index.html">Home</a>
+  <a href="categories.html">Vocabulary</a>
+</div>
+
+
+  </nav>
+
+  <main class="quiz-page">
+
+
+<a class="back-link" href="categories.html">← Back to Vocabulary</a>
+
+<div class="quiz-header">
+  <p class="breadcrumb">
+    Vocabulary → <span id="category-name"></span> → Quiz
+  </p>
+
+  <h1 id="category-title"></h1>
+
+  <p>Test your Ilocano vocabulary.</p>
+</div>
+
+<div class="quiz-container">
+
+  <p id="question-number"></p>
+
+  <h2 id="quiz-question"></h2>
+
+  <div id="answer-container"></div>
+
+  <p id="quiz-feedback"></p>
+
+</div>
+
+<button id="next-question-button">Next Question</button>
+
+
+  </main>
+
+  <script src="vocabulary.js"></script>
+
+  <script src="script.js"></script>
 
 </body>
 </html>
