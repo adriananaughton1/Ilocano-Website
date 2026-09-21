@@ -12,50 +12,91 @@
   <nav class="navbar">
     <div class="logo">Learn Ilocano</div>
 
-
-<div class="nav-links">
-  <a href="index.html">Home</a>
-  <a href="categories.html">Vocabulary</a>
-</div>
-
-
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="categories.html">Vocabulary</a>
+    </div>
   </nav>
 
   <main class="quiz-page">
 
+    <a class="back-link" href="categories.html">← Back to Vocabulary</a>
 
-<a class="back-link" href="categories.html">← Back to Vocabulary</a>
+    <div class="quiz-header">
+      <p class="breadcrumb">
+        Vocabulary → <span id="category-name"></span> → Quiz
+      </p>
 
-<div class="quiz-header">
-  <p class="breadcrumb">
-    Vocabulary → <span id="category-name"></span> → Quiz
-  </p>
+      <h1 id="category-title"></h1>
 
-  <h1 id="category-title"></h1>
+      <p>Test your Ilocano vocabulary.</p>
+    </div>
 
-  <p>Test your Ilocano vocabulary.</p>
-</div>
 
-<div class="quiz-container">
+    <!-- Quiz Length Selection -->
 
-  <p id="question-number"></p>
+    <div class="quiz-container" id="quiz-length-container">
 
-  <h2 id="quiz-question"></h2>
+      <h2>How long would you like your quiz?</h2>
 
-  <div id="answer-container"></div>
+      <div id="quiz-length-options">
 
-  <p id="quiz-feedback"></p>
+        <button class="quiz-length-button" data-length="10">
+          <strong>Short</strong>
+          <span>10 questions</span>
+        </button>
 
-</div>
+        <button class="quiz-length-button" data-length="30">
+          <strong>Medium</strong>
+          <span>30 questions</span>
+        </button>
 
-<button id="next-question-button">Next Question</button>
+        <button class="quiz-length-button" data-length="all">
+          <strong>Long</strong>
+          <span id="long-quiz-count">All questions</span>
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <!-- Actual Quiz -->
+
+    <div class="quiz-container" id="quiz-content" style="display: none;">
+
+      <p id="question-number"></p>
+
+      <h2 id="quiz-question"></h2>
+
+      <div id="answer-container"></div>
+
+      <p id="quiz-feedback"></p>
+
+    </div>
+
+    <button
+      id="next-question-button"
+      style="display: none;"
+    >
+      Next Question
+    </button>
+    
+    <button
+      id="back-to-vocabulary-button"
+      style="display: none;"
+      onclick="window.location.href='categories.html'"
+    >
+      ← Back to Vocabulary
+    </button>
+
 
 
   </main>
 
   <script src="vocabulary.js"></script>
-
   <script src="script.js"></script>
 
 </body>
 </html>
+

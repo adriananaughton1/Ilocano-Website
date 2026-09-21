@@ -296,3 +296,51 @@ body {
     border-color: #d9534f;
 }
 
+
+/* Quiz Length Selection */
+
+#quiz-length-container h2 {
+    margin-bottom: 30px;
+}
+
+#quiz-length-options {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.quiz-length-button {
+    width: 150px;
+    min-height: 100px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    background-color: white;
+    color: var(--text-color);
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    font-size: 1rem;
+}
+
+.quiz-length-button strong {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+
+.quiz-length-button span {
+    color: #666;
+}
+
+.quiz-length-button:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+
